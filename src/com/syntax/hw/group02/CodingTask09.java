@@ -6,11 +6,19 @@ public class CodingTask09 {
 		// Write a java program to find the second largest number in the array?
 
 		int[] array = { 45, 78, 12, 67, 55, 89, 23, 77, 88 };
-		int size = array.length;
 
-		for (int m = 0; m < array.length; m++) {
+		int largest = 0;
+		int secondLargest = 0;
+		for (int i = 0; i < array.length; i++) {
+			if (array[i] > largest) {
+				secondLargest = largest;
+				largest = array[i];
+			} else if (array[i] > secondLargest && array[i] < largest) {
+				secondLargest = array[i];
+			}
 		}
-		System.out.println("Second Largest: " + array[size - 1]);
+		System.out.println("The second largest number in the array is " + secondLargest);
+
 	}
 
 }
