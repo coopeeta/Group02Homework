@@ -6,7 +6,7 @@ public class CodingTask01 {
 
 	public static void main(String[] args) {
 
-// Create an array in int values using a scanner and calculate the sum of all
+// Create an int array using a scanner and calculate the sum of all
 // stored elements in that array.
 
 		int n;
